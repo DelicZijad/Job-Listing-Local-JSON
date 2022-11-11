@@ -200,10 +200,10 @@ display: flex;
     }
 }
 &--categories{
-    display: grid;
-    grid-template-columns: repeat(3,auto);
-    gap:1rem;
-    justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+    gap: 1.5rem;
+    column-width: max-content;
     align-items: center;
     @include desktop{
         grid-template-columns: repeat(5,auto);
